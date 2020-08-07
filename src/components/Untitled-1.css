@@ -1,0 +1,20 @@
+
+.parallax-container {
+  perspective: 8px;
+  perspective-origin: 0%;
+}
+
+.background {
+  transform: translateZ(0px);
+}
+
+.foreground {
+  
+  transform-origin: 0;
+  transform: translateZ(3px) scale(0.625);
+  
+  /* Uncomment the code below to see the difference the scale property makes! */
+  /* transform: translateZ(3px); */
+  /* transform: translateZ(0) scale(1); */
+}
+

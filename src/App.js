@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import Header from '../src/components/Header'
+import Home from './components/Home';
 
 function App() {
+  const [Scroll, setScroll] = useState(false)
+  console.log(Scroll);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="md:relative ">
+        <Home setScroll={setScroll} />
+        <div className=' md:w-screen md:absolute md:top-0'>
+
+          <Header  Scroll={Scroll} />
+        </div>
+      </div>
+      
+    </>
   );
 }
 
