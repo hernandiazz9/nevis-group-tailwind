@@ -18019,10 +18019,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-.video-title {
-  background-color: rgba(0,0,0, .7);
-}
-
 @media only screen and (min-width : 768px) {
   /**
    * Parallax
@@ -18075,7 +18071,6 @@ video {
   }
 
   .video-title {
-    background-color: rgba(0,0,0, .7);
     position: absolute;
     top: 50%;
     left: 50%;

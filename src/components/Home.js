@@ -1,5 +1,7 @@
 import React from 'react'
 import bgImg from '../assets/bg.jpg'
+import Services from './Services';
+import Team from './Team';
 
 
 const Home = ({setScroll}) => {
@@ -18,29 +20,41 @@ const Home = ({setScroll}) => {
             <article className="parallax-container ">
                 <header className="parallax">
                     <div className="video-wrapper ">
-                        <h1 className=" hidden md:block p-4 text-white text-1xl uppercase video-title   md:p-8 md:text-5xl">
-                        BUILDING IN CENTRAL OTAGO SINCE 2007
-                        <p style={{fontSize: '27px'}}>Queenstown based bespoke builders and project managers.  Specialising in commercial and residential builds, renovations and landscaping.  Friendly client focused team focusing on efficiency and value for money.</p>
-                        </h1>
+                        <div className=" hidden  md:-mt-48 md:block  text-white   uppercase video-title   md:p-8 ">
+                            <h1 className='text-white tracking-wider text-4xl pb-4 text-center font-bold'> 
+                                WELCOME TO NEVIS GROUP 
+                            </h1>
+                            <p className=' tracking-widest text-white text-5xl text-center font-extrabold pb-4'>
+                                BUILDING IN CENTRAL OTAGO SINCE 2007 
+                            </p>
+                            <p className=' text-white tracking-wider text-xl text-center'>Queenstown based bespoke builders and project managers.  Specialising in commercial and residential builds, renovations and landscaping.  Friendly client focused team focusing on efficiency and value for money.</p>
+                        </div>
+                       
                         <img src={bgImg} alt="." className=" hidden md:block  md:h-full md:w-full"/>
-                        <div style={{backgroundImage: "url(" +  bgImg  + ")"}} className='w-full flex justify-center  py-64 bg-cover bg-fixed h-64 bg-no-repeat bg-center md:hidden'>
-                            <div className=" max-w-xs -mt-8 ">
-                                <p className='bg-black bg-opacity-75 text-white'>
-                                    BUILDING IN CENTRAL OTAGO SINCE 2007
-                                </p>
-                                <p className='bg-black bg-opacity-75 text-white'>Queenstown based bespoke builders and project managers.  Specialising in commercial and residential builds, renovations and landscaping.  Friendly client focused team focusing on efficiency and value for money.</p>
-                            </div>
+                    </div>     
+                        {/* home en modo celular */}
+                    <div style={{backgroundImage: "url(" +  bgImg  + ")"}} className='w-full flex justify-center  py-64 bg-cover bg-fixed h-64 bg-no-repeat  bg-center md:hidden'>
+                        <div className=" max-w-sm -mt-24 ">
+                            <h1 className='text-white text-2xl pb-4 text-center font-semibold'> 
+                                WELCOME TO NEVIS GROUP 
+                            </h1>
+                            <p className=' text-white text-4xl text-center font-bold'>
+                                BUILDING IN CENTRAL OTAGO SINCE 2007 
+                            </p>
+                            <p className=' text-white font-medium text-center text-lg'>Queenstown based bespoke builders and project managers.  Specialising in commercial and residential builds, renovations and landscaping.  Friendly client focused team focusing on efficiency and value for money.</p>
                         </div>
                     </div>
+                    
                 </header>
 
-                <div className="bg-white content leading-normal py-12 px-4 md:px-12">
-                    <div className="mx-auto max-w-md">
-                    <p className="mb-4 md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem error iure quo ea dolore, iste ad assumenda ducimus sunt. Rerum nulla ipsum unde exercitationem ea atque explicabo tempore perferendis delectus?</p>
-                    <p className="mb-4 md:text-xl">Laudantium cumque mollitia maxime, magni pariatur blanditiis laborum quisquam. Iure veniam deserunt debitis minus animi at fugiat doloremque a tempore obcaecati adipisci voluptate molestiae, amet odio, unde velit! Dolore, molestiae.</p>
-                    <p className="mb-4 md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem error iure quo ea dolore, iste ad assumenda ducimus sunt. Rerum nulla ipsum unde exercitationem ea atque explicabo tempore perferendis delectus?</p>
-                    <p className="md:text-xl">Laudantium cumque mollitia maxime, magni pariatur blanditiis laborum quisquam. Iure veniam deserunt debitis minus animi at fugiat doloremque a tempore obcaecati adipisci voluptate molestiae, amet odio, unde velit! Dolore, molestiae.</p>
-                    </div>
+                <div className="  w-full content leading-normal">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <Services/>
+                    <Team/>
+                    
                 </div>
         
             </article>

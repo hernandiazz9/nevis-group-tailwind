@@ -6,11 +6,7 @@
 
 
 
-.video-title {
-  background-color: rgba(0,0,0, .7);
-      
-    
-}
+
 
 
 
@@ -64,7 +60,6 @@
   }
 
   .video-title {
-    background-color: rgba(0,0,0, .7);
     position: absolute;
       top: 50%;
       left: 50%;
